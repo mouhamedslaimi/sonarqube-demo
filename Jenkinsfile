@@ -25,24 +25,7 @@ pipeline {
         }
       }
     }
-        stage("Qua & Secu") {
-            parallel {
 
-                stage('Quality') {
-
-                  environment {
-                    SCANNER_HOME = tool 'sonar-scanner'
-                  }
-                  steps {
-                    withSonarQubeEnv('sonarqube') {
-                      sh "${SCANNER_HOME}/bin/sonar-scanner"
-                    }
-                  }
-                }
-
-
-            }
-        }
   
  /*
     stage('deploy') {
