@@ -18,7 +18,13 @@ pipeline {
         }
       }
     }
-    
+    stage('Tests Integration') {
+      steps {
+        withMaven(globalMavenSettingsConfig: 'ab5e38bd-cacd-4b18-9f8f-b6a2760730e5', maven: 'maven3', traceability: false) {
+          sh "mvn verify"
+        }
+      }
+    }
   
  /*
     stage('deploy') {
