@@ -10,13 +10,21 @@ import com.devops.sonarqubedemo.service.MessageServiceImpl;
 
 import java.util.List;
 
+/**
+ * The type Message controller.
+ */
 @RestController
 @RequestMapping("/message")
 public class MessageController {
 
 	@Autowired
 	private MessageServiceImpl service;
-	 
+
+	/**
+	 * Gets message.
+	 *
+	 * @return the message
+	 */
 	@GetMapping("/")
 	public List<Message> getMessage() {
 		return service.getMessage();

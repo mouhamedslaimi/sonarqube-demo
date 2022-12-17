@@ -10,16 +10,24 @@ import com.devops.sonarqubedemo.service.MessageServiceImpl;
 
 import java.util.List;
 
+/**
+ * The type Message controller.
+ */
 @RestController
 @RequestMapping(&quot;/message&quot;)
-<span class="fc" id="L15">public class MessageController {</span>
+<span class="nc" id="L18">public class MessageController {</span>
 
 	@Autowired
 	private MessageServiceImpl service;
-	 
+
+	/**
+	 * Gets message.
+	 *
+	 * @return the message
+	 */
 	@GetMapping(&quot;/&quot;)
 	public List&lt;Message&gt; getMessage() {
-<span class="fc" id="L22">		return service.getMessage();</span>
+<span class="nc" id="L30">		return service.getMessage();</span>
 	}
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

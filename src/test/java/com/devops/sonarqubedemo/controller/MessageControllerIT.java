@@ -15,6 +15,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+/**
+ * The type Message controller it.
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -24,6 +27,11 @@ public class MessageControllerIT {
     @Autowired
     private MessageServiceImpl messageService;
 
+    /**
+     * Registration works through all layers.
+     *
+     * @throws Exception the exception
+     */
     @Test
     void registrationWorksThroughAllLayers() throws Exception {
         Message message = new Message("DevOps");
