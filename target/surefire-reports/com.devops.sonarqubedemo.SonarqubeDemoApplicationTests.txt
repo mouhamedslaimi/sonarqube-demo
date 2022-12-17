@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.devops.sonarqubedemo.SonarqubeDemoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.487 s - in com.devops.sonarqubedemo.SonarqubeDemoApplicationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.492 s - in com.devops.sonarqubedemo.SonarqubeDemoApplicationTests
