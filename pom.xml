@@ -65,6 +65,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<finalName>sonarqube-demo</finalName>
 	</build>
 <!--
 	<distributionManagement>

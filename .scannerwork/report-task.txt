@@ -1,6 +1,0 @@
-projectKey=sonarqube-demo:develop
-serverUrl=http://localhost:8094
-serverVersion=9.7.1.62043
-dashboardUrl=http://localhost:8094/dashboard?id=sonarqube-demo%3Adevelop
-ceTaskId=AYU5iK7cagzaHn1Qhgpy
-ceTaskUrl=http://localhost:8094/api/ce/task?id=AYU5iK7cagzaHn1Qhgpy
