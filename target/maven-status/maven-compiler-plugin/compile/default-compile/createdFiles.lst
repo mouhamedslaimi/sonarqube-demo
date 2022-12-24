@@ -1,5 +1,0 @@
-com\devops\sonarqubedemo\entities\Message$MessageBuilder.class
-com\devops\sonarqubedemo\controller\MessageController.class
-com\devops\sonarqubedemo\entities\Message.class
-com\devops\sonarqubedemo\SonarqubeDemoApplication.class
-com\devops\sonarqubedemo\service\MessageServiceImpl.class
