@@ -1,4 +1,4 @@
-# configure spring-boot with sonar
+# Configure spring-boot with sonar
 1 -  download sonarqube  : https://www.sonarqube.org/downloads/  and  download sonar-scanner cli
 
 2 - extract file then go to sonarqube-9.7.0.61563\bin\windows-x86-64\  
