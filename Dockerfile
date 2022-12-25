@@ -8,7 +8,7 @@ COPY ./ ./
 RUN mvn clean package
 
 # the second stage of our build will use open jdk 8 on alpine 3.9
-FROM openjdk:11-jdk-oracle
+FROM adoptopenjdk:11-jre-hotspot as builder
 
 # copy only the artifacts we need from the first stage and discard the rest
 COPY --from=MAVEN_BUILD target/*jar /sonarqube-demo.jar
