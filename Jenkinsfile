@@ -21,12 +21,16 @@ pipeline {
         }
       }
     }
-		stage('Build image') {
 
-			steps {
-				sh 'docker build -t slaimimed/sonarqube-demo:latest .'
-			}
-		}
+		stage('Build image') {
+               dockerImage = docker.build("slaimimed/sonarqube-demo:latest")
+            }
+
+         stage('Push image') {
+                withDockerRegistry([ credentialsId: "Docker-hub", url: "" ]) {
+                dockerImage.push()
+                }
+          }
     /*
     stage('Tests Integration') {
       steps {
