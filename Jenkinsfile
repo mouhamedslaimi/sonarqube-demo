@@ -24,7 +24,9 @@ pipeline {
 		stage('Build Docker image') {
 
 			steps {
-				sh 'docker build -t slaimimed/sonarqube-demo:latest .'
+				sh 'docker login -u "slaimimed" --password "estjuveca10A"
+                            docker image build -t slaimimed/sonarqube-demo:latest .
+                            docker push slaimimed/sonarqube-demo:latest'
 			}
 		}
 
