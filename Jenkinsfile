@@ -24,9 +24,14 @@ pipeline {
 		stage('Build Docker image') {
 
 			steps {
-				sh 'docker login -u "slaimimed" --password "estjuveca10A" '
-				sh 'docker image build -t slaimimed/sonarqube-demo:latest .'
-				sh 'docker push slaimimed/sonarqube-demo:latest'
+				//sh 'docker login -u "slaimimed" --password "estjuveca10A" '
+				//sh 'docker image build -t slaimimed/sonarqube-demo:latest .'
+				//sh 'docker push slaimimed/sonarqube-demo:latest'
+				sh 'docker run -u 0 --privileged --name  slaimimed -it -d -p 8180:8180 -p 50000:50000 \
+                    -v /var/run/docker.sock:/var/run/docker.sock \
+                    -v $(which docker):/usr/bin/docker \
+                    -v /home/jenkins_home:/var/jenkins_home \
+                    slaimimed/sonarqube-demo:latest'
 			}
 		}
 
