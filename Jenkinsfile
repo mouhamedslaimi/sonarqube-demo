@@ -21,7 +21,7 @@ pipeline {
         }
       }
     }
-		stage('Build image') {
+		stage('Build Docker image') {
 
 			steps {
 				sh 'docker build -t slaimimed/sonarqube-demo:latest .'
